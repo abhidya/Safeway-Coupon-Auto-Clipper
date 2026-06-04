@@ -23,10 +23,20 @@ Run browser automation only on your own account, at human-safe pacing, and in li
 1. Install the Tampermonkey extension for your browser.
 2. Click on the Tampermonkey icon in your browser's toolbar and select "Create a new script".
 3. Copy and paste the provided script into the editor.
-4. Adjust the `COUPON_CLICK_DELAY` and `LOAD_MORE_DELAY` values in the script if you want different delay timings.
+4. Adjust `config.couponClickDelay` and `config.loadMoreDelay` in the script if you want different delay timings.
 5. Save the script.
 6. Navigate to `https://www.safeway.com/foru/coupons-deals.html`.
-7. The script will automatically start clicking the "Clip Coupon" and "Load more" buttons based on the defined delays.
+7. Review `config.dryRun`. The archived script now defaults to dry-run mode, which logs and marks matched buttons without clicking them. Set it to `false` only after you have reviewed the current site, account rules, and selectors.
+
+## Offline demo
+
+Open `demo.html` in a browser to exercise the selectors without visiting Safeway or touching a real account. The fixture loads the userscript locally and highlights buttons that the dry-run mode would have clicked.
+
+Syntax check:
+
+```bash
+node --check couponclipper.user.js
+```
 
 **Note:**
 Please use this script responsibly. Excessive or rapid requests to any website can disrupt the service, violate terms of service, or even result in IP bans. Always ensure you're adhering to a website's terms of service and robot.txt file before automating interactions.
