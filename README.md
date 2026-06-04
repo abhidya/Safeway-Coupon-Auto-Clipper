@@ -10,6 +10,14 @@ Author: abhidya
 **Description:**
 This Tampermonkey script is designed to automatically click "Clip Coupon" buttons and the "Load more" button on Safeway's coupons and deals page. The script introduces adjustable delays to prevent overwhelming the server.
 
+## Archive status
+
+This is an archived browser userscript demo. Retail websites change frequently, so selectors, page flow, and account policies may no longer match the current Safeway site.
+
+## Responsible-use note
+
+Run browser automation only on your own account, at human-safe pacing, and in line with the site's current terms. Do not add credentials, cookies, or account-specific data to the repository.
+
 **Instructions for Use with Tampermonkey:**
 
 1. Install the Tampermonkey extension for your browser.
